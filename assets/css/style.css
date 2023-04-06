@@ -16,6 +16,10 @@ nav ul li a {
   color: #303030 !important;
 }
 
+.navbar-toggler:focus{
+box-shadow: none;
+}
+
 .log-in {
   font-weight: 600;
   color: #03f !important;
