@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Source+Sans+Pro:wght@300;400;600&display=swap");
+
+body {
+  padding-top: 81px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* navbar css */
+nav {
+  font-size: 18px;
+
+  font-weight: 400;
+}
+
+nav ul li a {
+  color: #303030 !important;
+}
+
+.log-in {
+  font-weight: 600;
+  color: #03f !important;
+  border-color: #03f !important;
+}
+
+.buy-now {
+  background-color: #03f;
+  color: white;
+  border-color: #03f;
+  font-weight: 600;
+}
+
+.buy-now:hover {
+  color: #03f;
+  background-color: white;
+  border-color: #03f;
+}
+
+.btn-outline-primary:hover {
+  color: white !important;
+  background-color: #03f !important;
+  border-color: #03f !important;
+}
+/* navbar css */
+
+/* landing page css */
+.intro {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 4.5rem;
+  color: #303030;
+}
+/* landing page css */
+
+/* stick section css */
+.sticky-section h6,
+.sticky-section button /* accordion heading*/ {
+  font-weight: 600;
+}
+
+.list li,
+.list a {
+  text-decoration: none;
+  font-size: 0.72222rem;
+  font-weight: 300;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 3px;
+}
+
+.info {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/*accordion css */
+.accordion {
+  --bs-accordion-border-color: none;
+}
+
+.accordion-button:focus {
+  border-color: none;
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  background-image: url(../imag/down-chevron.png);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../imag/down-chevron.png);
+}
+
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color: white;
+}
+
+/*accordion css */
+
+.sticky-top {
+  overflow: auto;
+  height: 440px;
+  top: 140px;
+}
+
+/* stick section css */
+
+/* card section css */
+.card .card-title {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+}
+
+.card .card-text, .footer-copyright /*footer part*/ {
+  font-size: 0.77778rem;
+  font-weight: 300;
+}
+
+.card-head {
+  position: relative;
+}
+
+.card-hover-effect {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+  top: 0;
+  font-weight: 600;
+  color: #fff;
+  display: none;
+}
+
+.card-head:hover .card-hover-effect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .card-body .view-template {
+  font-size: 0.66667rem;
+  font-weight: 600;
+  display: flex;
+}
+
+.card .card-body .view-template:hover {
+  color: #03f;
+}
+/* card section css*/
+
+/* footer */
+footer h6, footer .accordion button {
+  font-size: 1.111rem;
+  font-weight: 400;
+}
+
+.footer-list,
+.footer-list a, .footer-terms a{
+  color: black;
+  font-size: 0.77778rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.footer-list li {
+  margin-top: 25px;
+}
+
+.footer-md{
+  padding-top: 140px;
+}
+/* footer */
+
+@media (max-width: 1200px) {
+  .intro {
+    font-size: 4.22rem;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    padding-top: 50px;
+  }
+
+  /* landing page media query*/
+  .intro {
+    font-size: 3rem;
+  }
+  /* landing page media query*/
+
+  .sticky-section h6, .card-hover-effect h6,
+  .sticky-section button /* accordion heading*/ {
+    font-size: 0.778rem;
+  }
+  
+}
